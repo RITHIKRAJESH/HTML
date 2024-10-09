@@ -1,0 +1,141 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Sizing Inheritance</title>
+    <style>
+        /* Parent with border-box */
+        .parent-border-box {
+            width: 300px;
+            padding: 20px;
+            border: 5px solid red;
+            box-sizing: border-box;
+            background-color: lightblue;
+        }
+
+        /* Child without inheritance, default box-sizing is content-box */
+        .child-no-inheritance {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid blue;
+            background-color: lightgreen;
+        }
+
+        /* Child that inherits parent's box-sizing */
+        .child-inherit {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid blue;
+            box-sizing: inherit; /* Inherits from parent */
+            background-color: lightcoral;
+        }
+
+        /* Universal box-sizing: border-box */
+        .global-box-sizing * {
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Box-Sizing without Inheritance (Content-Box)</h2>
+    <div class="parent-border-box">
+        Parent (border-box)
+        <div class="child-no-inheritance">
+            Child (content-box by default)
+        </div>
+    </div>
+
+    <h2>Box-Sizing with Inheritance</h2>
+    <div class="parent-border-box">
+        Parent (border-box)
+        <div class="child-inherit">
+            Child (inherits border-box)
+        </div>
+    </div>
+
+    <h2>Global Box-Sizing: Border-Box</h2>
+    <div class="global-box-sizing">
+        <div class="parent-border-box">
+            Parent with global box-sizing (border-box)
+            <div class="child-no-inheritance">
+                Child with global box-sizing (border-box)
+            </div>
+        </div>
+    </div>
+
+</body>
+</html> -->
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Fit Example</title>
+    <style>
+        .container {
+            width: 300px;
+            height: 200px;
+            border: 2px solid #000;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+
+        .container img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .fit-fill img {
+            object-fit: fill;
+        }
+
+        .fit-contain img {
+            object-fit: contain;
+        }
+
+        .fit-cover img {
+            object-fit: cover;
+        }
+
+        .fit-none img {
+            object-fit: none;
+        }
+
+        .fit-scale-down img {
+            object-fit: scale-down;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>object-fit: fill (default)</h2>
+    <div class="container fit-fill">
+        <img src="" alt="Sample Image">
+    </div>
+
+    <h2>object-fit: contain</h2>
+    <div class="container fit-contain">
+        <img src="https://via.placeholder.com/600x400" alt="Sample Image">
+    </div>
+
+    <h2>object-fit: cover</h2>
+    <div class="container fit-cover">
+        <img src="https://via.placeholder.com/600x400" alt="Sample Image">
+    </div>
+
+    <h2>object-fit: none</h2>
+    <div class="container fit-none">
+        <img src="https://via.placeholder.com/600x400" alt="Sample Image">
+    </div>
+
+    <h2>object-fit: scale-down</h2>
+    <div class="container fit-scale-down">
+        <img src="https://via.placeholder.com/600x400" alt="Sample Image">
+    </div>
+
+</body>
+</html> -->
